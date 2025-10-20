@@ -21,10 +21,10 @@
       </template>
       <div>
         <h2 :class="`mt-n1 headline font-weight-light mb-4 text-${year.color}`">
-          Lorem ipsum
+          {{ year.titulo }}
         </h2>
         <div>
-          Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+          {{ year.texto }}
         </div>
       </div>
     </v-timeline-item>
@@ -37,24 +37,34 @@
 <script setup>
   const years = [
     {
-      color: 'cyan',
-      year: '1960',
+      color: 'yellow',
+      year: '(1984 - 1990)',
+      titulo: 'Fundación y primeros años',
+      texto: 'El Colegio Comfacor fue fundado por la Caja de Compensación Familiar de Córdoba (Comfacor) con el propósito de brindar educación de calidad a los hijos de los afiliados.',
     },
     {
-      color: 'green',
-      year: '1970',
+      color: 'blue lighten-3',
+      year: '(1991 - 2000)',
+      titulo: 'Crecimiento académico',
+      texto: 'Se amplió la cobertura educativa hasta la educación básica secundaria, se implementaron proyectos pedagógicos orientados al desarrollo social y comunitario y el colegio comenzó a ganar reconocimiento local por su calidad educativa.'
     },
     {
-      color: 'pink',
-      year: '1980',
+      color: 'white',
+      year: '(2001 - 2010)',
+      titulo: 'Consolidación institucional',
+      texto: 'Se incorporaron nuevas infraestructuras y recursos tecnológicos, se fortalecieron las áreas de ciencias, inglés y competencias ciudadanas y el colegio reafirmó su compromiso con la formación integral bajo los valores de solidaridad, respeto y responsabilidad.',
     },
     {
-      color: 'amber',
-      year: '1990',
+      color: 'yellow',
+      year: '(2011 - 2020)',
+      titulo: 'Innovación educativa',
+      texto: 'Se adoptaron metodologías activas e inclusivas que promueven el aprendizaje significativo, se impulsaron programas de educación ambiental, arte y cultura e inició la integración de TIC en el proceso de enseñanza-aprendizaje.',
     },
     {
-      color: 'orange',
-      year: '2000',
+      color: 'blue lighten-3',
+      year: '(2021 - Actualidad)',
+      titulo: 'Proyección y calidad',
+      texto: 'El colegio continúa posicionándose como una institución educativa líder en Córdoba, se fortalecen los programas de formación en valores, bilingüismo y tecnología y su misión sigue centrada en formar ciudadanos competentes, solidarios y comprometidos con el desarrollo social.',
     },
   ]
 </script>
