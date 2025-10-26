@@ -4,6 +4,7 @@
     show-arrows="hover"
     cycle
     hide-delimiter-background
+<<<<<<< HEAD
     class="custom-carousel"
     interval="5000"
     hide-delimiters
@@ -15,16 +16,36 @@
       cover
       class="carousel-slide"
     >
+=======
+  >
+    <v-carousel-item
+      v-for="(slide) in slides" :key="i"
+       :src="slide"
+        cover
+    >
+    
+>>>>>>> 422988babc9f2724943b0e4a388ee58b3245b7fc
     </v-carousel-item>
   </v-carousel>
 </template>
 
 <script setup>
+<<<<<<< HEAD
+=======
+  const colors = [
+    'indigo',
+    'warning',
+    'pink darken-2',
+    'red lighten-1',
+    'deep-purple accent-4',
+  ]
+>>>>>>> 422988babc9f2724943b0e4a388ee58b3245b7fc
   const slides = [
     "https://upload.wikimedia.org/wikipedia/commons/6/63/Reyes_catolicos_colegio_bogota.jpg",
     "https://upload.wikimedia.org/wikipedia/commons/1/12/Colegio_Rosa_de_Santa_Mar%C3%ADa_patio_2017.jpg",
     "https://live.staticflickr.com/7748/17369825872_3968dcee76_b.jpg",
   ]
+<<<<<<< HEAD
 </script>
 
 <style scoped>
@@ -143,3 +164,6 @@
   }
 }
 </style>
+=======
+</script>
+>>>>>>> 422988babc9f2724943b0e4a388ee58b3245b7fc
